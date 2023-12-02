@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    
+    <title>Wordle with Style</title>
+</head>
+<body>
+    
+    <div class="putz">
+        <div class="top">
+            <input class="1"  type="text" maxlength="1" >
+            <input class="2" type="text" maxlength="1" >
+            <input class="3" type="text" maxlength="1" >
+            <input class="4" type="text" maxlength="1" >
+            <input class="5" type="text" maxlength="1" >
+        </div>
+        <div class="enter">
+            <div class="dot"></div>
+            <button class="final">Guess</button>
+        </div>
+        <div class="options">
+            <button class="reset">Reset <span class="span-reset">→</span><div class="filler"></div></button>
+            <button class="giveUp">Solve<span class="span-reset2">→</span><div class="filler2"></div></button>
+        </div>
+    </div>  
+    <div class="containIt">
+        <div  class="guesses">
+            <div class="border"></div>
+            <div class="border2"></div>
+            <div  class="tv-container">
+                <div class="tv-top">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <div class="tv-bottom">
+                    <p style="text-align: center; margin:9px;" >Your Guesses will be here </p>
+                    <p style="text-align: center;margin:0px;"><i>Close window to make it harder!</i> </p>
+                </div>
+            </div>
+            <div class="google-chrome">
+                <div class="google-top">
+                        <div class="red-chrome"></div>
+                        <div class="yellow-chrome"></div>
+                        <div class="green-chrome"></div>
+                </div>
+                <div class="main-google-content">
+                    <div class="searching">
+                        <img class="google-logo" height="100px" src="./assets/search.png" alt="">
+                        <div class="lookUp">
+                            <textarea name="" id="" cols="10" rows="1" class="bar"></textarea>
+                            <button class="searchButton"><img class="glass" height="10px" src="./assets/glass.png" alt=""></button>
+                        </div>
+                        <img  class="setz" height="18px" src="./assets/setz.png" alt="">
+                        <p class="hidden-option"> Dark Mode</p>
+                    </div>
+                    <div class="results">
+                        <h5>Dictionary</h5>
+                        <p class="searchedWord">Hmmmm</p>
+                        <p class="searchedDefinition"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img height="500px" src="./assets/theme-lcd-slideshow.png" alt="">
+        <div class="file-folder">
+            <img src="./assets/folder.png" height="60px" alt="" class="folder">
+            <p class="used">Used Words</p>
+        </div>
+        <div class="get-help">
+            <img class="hint" src="./assets/google.png" height="40px" alt="">
+            <p class="def-hint">Definition</p>
+        </div>
+        
+    </div>
+    <div class="desk">
+        <img src="./assets/desk.png" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
